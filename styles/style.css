@@ -1,3 +1,443 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCode-Light.woff2") format("woff2"), url("../fonts/CascadiaCode-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCodeItalic-ExtraLightItalic.woff2") format("woff2"), url("../fonts/CascadiaCodeItalic-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCode-Bold.woff2") format("woff2"), url("../fonts/CascadiaCode-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCode-ExtraLight.woff2") format("woff2"), url("../fonts/CascadiaCode-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCodeItalic-BoldItalic.woff2") format("woff2"), url("../fonts/CascadiaCodeItalic-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCodeItalic-SemiBoldItalic.woff2") format("woff2"), url("../fonts/CascadiaCodeItalic-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCodeItalic-LightItalic.woff2") format("woff2"), url("../fonts/CascadiaCodeItalic-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePL-Bold.woff2") format("woff2"), url("../fonts/CascadiaCodePL-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePL-ExtraLight.woff2") format("woff2"), url("../fonts/CascadiaCodePL-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCodeItalic-Italic.woff2") format("woff2"), url("../fonts/CascadiaCodeItalic-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCodeItalic-SemiLightItalic.woff2") format("woff2"), url("../fonts/CascadiaCodeItalic-SemiLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePLItalic-LightItalic.woff2") format("woff2"), url("../fonts/CascadiaCodePLItalic-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePLItalic-ExtraLightItalic.woff2") format("woff2"), url("../fonts/CascadiaCodePLItalic-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePL-Light.woff2") format("woff2"), url("../fonts/CascadiaCodePL-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePLItalic-Italic.woff2") format("woff2"), url("../fonts/CascadiaCodePLItalic-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePLItalic-BoldItalic.woff2") format("woff2"), url("../fonts/CascadiaCodePLItalic-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePL-SemiBold.woff2") format("woff2"), url("../fonts/CascadiaCodePL-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePL-Regular.woff2") format("woff2"), url("../fonts/CascadiaCodePL-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePLItalic-SemiLightItalic.woff2") format("woff2"), url("../fonts/CascadiaCodePLItalic-SemiLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePLItalic-SemiBoldItalic.woff2") format("woff2"), url("../fonts/CascadiaCodePLItalic-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+main {
+  flex: 1 0 auto;
+}
+
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCode-Light.woff2") format("woff2"), url("../fonts/CascadiaCode-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCodeItalic-ExtraLightItalic.woff2") format("woff2"), url("../fonts/CascadiaCodeItalic-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCode-Bold.woff2") format("woff2"), url("../fonts/CascadiaCode-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCode-ExtraLight.woff2") format("woff2"), url("../fonts/CascadiaCode-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCodeItalic-BoldItalic.woff2") format("woff2"), url("../fonts/CascadiaCodeItalic-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCodeItalic-SemiBoldItalic.woff2") format("woff2"), url("../fonts/CascadiaCodeItalic-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCodeItalic-LightItalic.woff2") format("woff2"), url("../fonts/CascadiaCodeItalic-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePL-Bold.woff2") format("woff2"), url("../fonts/CascadiaCodePL-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePL-ExtraLight.woff2") format("woff2"), url("../fonts/CascadiaCodePL-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCodeItalic-Italic.woff2") format("woff2"), url("../fonts/CascadiaCodeItalic-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCodeItalic-SemiLightItalic.woff2") format("woff2"), url("../fonts/CascadiaCodeItalic-SemiLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePLItalic-LightItalic.woff2") format("woff2"), url("../fonts/CascadiaCodePLItalic-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePLItalic-ExtraLightItalic.woff2") format("woff2"), url("../fonts/CascadiaCodePLItalic-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePL-Light.woff2") format("woff2"), url("../fonts/CascadiaCodePL-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePLItalic-Italic.woff2") format("woff2"), url("../fonts/CascadiaCodePLItalic-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePLItalic-BoldItalic.woff2") format("woff2"), url("../fonts/CascadiaCodePLItalic-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePL-SemiBold.woff2") format("woff2"), url("../fonts/CascadiaCodePL-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePL-Regular.woff2") format("woff2"), url("../fonts/CascadiaCodePL-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePLItalic-SemiLightItalic.woff2") format("woff2"), url("../fonts/CascadiaCodePLItalic-SemiLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cascadia Code PL";
+  src: url("../fonts/CascadiaCodePLItalic-SemiBoldItalic.woff2") format("woff2"), url("../fonts/CascadiaCodePLItalic-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+header {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #18161C;
+  justify-content: space-between;
+}
+
+.title {
+  width: 100%;
+  height: 49.5%;
+  background-color: #26252C;
+  display: flex;
+  align-items: center;
+  color: #747474;
+  padding: 0 1.25rem;
+  gap: 1.5rem;
+}
+
+.circles {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.circles div {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+}
+.circles .red {
+  background-color: #FF6B6B;
+}
+.circles .yellow {
+  background-color: #F0B65A;
+}
+.circles .green {
+  background-color: #9FCD44;
+}
+
+.header-title h1 {
+  font-family: "Cascadia Code", sans-serif;
+  font-weight: 500;
+}
+
+.tabs {
+  width: 100%;
+  height: 49.5%;
+  display: flex;
+  gap: 7px;
+}
+.tabs .tab {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5rem;
+  background-color: #26252C;
+  border-top: 5px solid #18161C;
+  transition: all 0.2s ease-in-out;
+}
+.tabs .tab a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+}
+.tabs .tab:last-child {
+  flex: 1 0 auto;
+}
+.tabs .tab:hover a {
+  color: #F0B65A;
+}
+.tabs .active-tab {
+  border-top: 5px solid #FF6B6B;
+}
+.tabs .active-tab a {
+  color: #F0B65A;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[lang] {
+  display: none;
+}
+
+[lang].active {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Cascadia Code", sans-serif;
+  background-color: #18161C;
+}
 
 /*# sourceMappingURL=style.css.map */

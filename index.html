@@ -1,11 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Fomenko Viacheslav</title>
-	<link rel="stylesheet" href="./styles/style.css">
+    <meta charset="UTF-8">
+    <title>Fomenko Viacheslav</title>
+    <link rel="stylesheet" href="./styles/style.css">
+		<script defer src='./scripts/selectLanguage.js'></script>
+		<script defer src="./scripts/tabAnimation.js"></script>
 </head>
 <body>
-
+    <div class="wrapper">
+        <header>
+            <div class="title">
+                <div class="circles">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <div class='header-title'>
+                    <h1 lang='en'>Fomenko_Viacheslav</h1>
+                    <h1 lang='ru'>Фоменко_Вячеслав</h1>
+                </div>
+                <select onchange="select_language(this.value)">
+                    <option value="en" selected>English</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+            <div class="tabs">
+							<div class="tab active-tab">
+								<a href="" lang='en'>_hello</a>
+								<a href="" lang='ru'>_привет</a>
+							</div>
+							<div class="tab">
+								<a href="" lang='en'>_about me</a>
+								<a href="" lang='ru'>_обо мне</a>
+							</div>
+							<div class="tab">
+								<a href="" lang='en'>_skills</a>
+								<a href="" lang='ru'>_навыки</a>
+							</div>
+							<div class="tab">
+								<a href="" lang='en'>_projects</a>
+								<a href="" lang='ru'>_проекты</a>
+							</div>
+							<div class="tab">
+								<a href="" lang='en'>_contacts</a>
+								<a href="" lang='ru'>_контакты</a>
+							</div>
+							<div class="tab">
+							</div>
+						</div>
+        </header>
+        <main>
+            main
+        </main>
+        <footer>
+            footer
+        </footer>
+    </div>
 </body>
 </html>

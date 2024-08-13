@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('../fonts/CascadiaCode-Light.woff2') format('woff2'),
+        url('../fonts/CascadiaCode-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('../fonts/CascadiaCodeItalic-ExtraLightItalic.woff2') format('woff2'),
+        url('../fonts/CascadiaCodeItalic-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('../fonts/CascadiaCode-Bold.woff2') format('woff2'),
+        url('../fonts/CascadiaCode-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('../fonts/CascadiaCode-ExtraLight.woff2') format('woff2'),
+        url('../fonts/CascadiaCode-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('../fonts/CascadiaCodeItalic-BoldItalic.woff2') format('woff2'),
+        url('../fonts/CascadiaCodeItalic-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('../fonts/CascadiaCodeItalic-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/CascadiaCodeItalic-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('../fonts/CascadiaCodeItalic-LightItalic.woff2') format('woff2'),
+        url('../fonts/CascadiaCodeItalic-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code PL';
+    src: url('../fonts/CascadiaCodePL-Bold.woff2') format('woff2'),
+        url('../fonts/CascadiaCodePL-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code PL';
+    src: url('../fonts/CascadiaCodePL-ExtraLight.woff2') format('woff2'),
+        url('../fonts/CascadiaCodePL-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('../fonts/CascadiaCodeItalic-Italic.woff2') format('woff2'),
+        url('../fonts/CascadiaCodeItalic-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('../fonts/CascadiaCodeItalic-SemiLightItalic.woff2') format('woff2'),
+        url('../fonts/CascadiaCodeItalic-SemiLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code PL';
+    src: url('../fonts/CascadiaCodePLItalic-LightItalic.woff2') format('woff2'),
+        url('../fonts/CascadiaCodePLItalic-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code PL';
+    src: url('../fonts/CascadiaCodePLItalic-ExtraLightItalic.woff2') format('woff2'),
+        url('../fonts/CascadiaCodePLItalic-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code PL';
+    src: url('../fonts/CascadiaCodePL-Light.woff2') format('woff2'),
+        url('../fonts/CascadiaCodePL-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code PL';
+    src: url('../fonts/CascadiaCodePLItalic-Italic.woff2') format('woff2'),
+        url('../fonts/CascadiaCodePLItalic-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code PL';
+    src: url('../fonts/CascadiaCodePLItalic-BoldItalic.woff2') format('woff2'),
+        url('../fonts/CascadiaCodePLItalic-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code PL';
+    src: url('../fonts/CascadiaCodePL-SemiBold.woff2') format('woff2'),
+        url('../fonts/CascadiaCodePL-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code PL';
+    src: url('../fonts/CascadiaCodePL-Regular.woff2') format('woff2'),
+        url('../fonts/CascadiaCodePL-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code PL';
+    src: url('../fonts/CascadiaCodePLItalic-SemiLightItalic.woff2') format('woff2'),
+        url('../fonts/CascadiaCodePLItalic-SemiLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cascadia Code PL';
+    src: url('../fonts/CascadiaCodePLItalic-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/CascadiaCodePLItalic-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
