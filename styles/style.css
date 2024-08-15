@@ -188,8 +188,84 @@ table {
   font-style: italic;
   font-display: swap;
 }
+.hello_section {
+  padding: 5rem 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.code {
+  width: 40%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 6% repeat(3, 8%) 70%;
+  line-height: 1.875rem;
+  align-items: center;
+}
+.code .line_number {
+  color: #747474;
+}
+.code .code_line {
+  width: 0.125rem;
+  height: 95%;
+  background-color: #747474;
+  margin: auto;
+  transform: scaleY(110%);
+}
+.code .text {
+  padding-left: 0.625rem;
+  width: 100%;
+  font-weight: 600;
+}
+.code .text .purple {
+  color: #895197;
+}
+.code .text .green {
+  color: #9FCD44;
+}
+.code .text .yellow {
+  color: #F0B65A;
+}
+.code .text .blue {
+  color: #1E95E7;
+}
+.code .text .coral {
+  color: #FF6B6B;
+}
+.code .inner_code {
+  padding-left: 1.875rem;
+}
+
+.big_text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+}
+.big_text h1 {
+  font-size: calc(12vw - 1rem);
+  font-weight: 900;
+  color: #9FCD44;
+}
+
+@media screen and (max-width: 1350px) {
+  .hello_section {
+    padding: 3rem 5rem;
+  }
+}
 main {
   flex: 1 0 auto;
+  width: 100%;
+  height: 100%;
+  margin-top: 6rem;
+}
+main section {
+  color: white;
+  width: 100%;
+  min-height: calc(100vh - 6rem);
+  height: auto;
 }
 
 @font-face {
@@ -335,6 +411,8 @@ main {
 header {
   width: 100%;
   height: 6rem;
+  position: fixed;
+  z-index: 999;
   display: flex;
   flex-direction: column;
   background-color: #18161C;
@@ -426,9 +504,16 @@ header {
 
 html, body {
   height: 100%;
-  width: 100%;
-  overflow: hidden;
+  width: 100vw;
+  overflow-x: hidden;
   scroll-behavior: smooth;
+  background-color: #18161C;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .wrapper {
@@ -437,7 +522,6 @@ html, body {
   flex-direction: column;
   min-height: 100vh;
   font-family: "Cascadia Code", sans-serif;
-  background-color: #18161C;
 }
 
 /*# sourceMappingURL=style.css.map */
