@@ -16,22 +16,16 @@
 
 	display: grid;
 
-	grid-template-columns: 6% repeat(3, 8%) 70%;
+	grid-template-columns: 6% repeat(3, 6%) 76%;
 	line-height: 1.875rem;
 	align-items: center;
 	.line_number{
 		color: $light-gray;
-	}
-	.first{
-
-	}
- 
-	.last{
-
+		user-select: none;
 	}
 
 	.code_line {
-		width: .125rem;
+		width: .0938rem;
 		height: 95%;
 		background-color: $light-gray;
 		margin: auto;
@@ -42,7 +36,6 @@
 		padding-left: .625rem;
 		width: 100%;
 		font-weight: 600;
-		// text-wrap: nowrap;
 		
 		.purple{
 			color: $purple;
@@ -66,16 +59,37 @@
 }
 
 .big_text{
-	width: 50%;
+	width:45vw;
 	display: flex;
 	justify-content: center;
-	align-items: end;
+	align-items: start;
 	flex-direction: column;
 
+	gap: 13px;
+
 	h1{
-		font-size:calc(12vw - 1rem);
+		font-size: 11vw;
 		font-weight: 900;
 		color: $light-green;
+		line-height: 9vw;
+	}
+	h2{
+		font-size: 5.5vw;
+		font-weight: 900;
+	}
+	#typeWriterText{
+		color:$purple;
+
+		span {
+			margin-left: 7px;
+			border-right: .1em solid;
+			animation: caret 1s steps(1) infinite;
+		}
+		@keyframes caret {
+			50% {
+				border-color: transparent;
+			}
+		}
 	}
 }
 

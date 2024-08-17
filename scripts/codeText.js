@@ -27,7 +27,6 @@ function addContentToCodeBlock(size) {
 
 	
 	for (let i = 0; i < codeLenght; i++) {
-		// debugger
 		const lineNumber = document.createElement('span');
 		lineNumber.classList.add('line_number')
 		lineNumber.textContent =  `${i+1}`;
@@ -40,6 +39,9 @@ function addContentToCodeBlock(size) {
 		const empty2 = document.createElement('div')
 		const empty3 = document.createElement('div')
 		const textSpan = document.createElement('span')
+		empty.classList.add('empty')
+		empty2.classList.add('empty')
+		empty3.classList.add('empty')
 		line1.classList.add('code_line')
 		line2.classList.add('code_line')
 		line3.classList.add('code_line')
@@ -58,12 +60,6 @@ function addContentToCodeBlock(size) {
 		}
 		if(wordsArray.length!==0 && i >= (codeLenght-6)){
 			codeLenght++;
-		}
-		if (lineNumber.textContent === `1`) {
-			lineNumber.classList.add('first')
-		}
-		if (`${i+1}` === `${codeLenght}`) {
-			lineNumber.classList.add('last')
 		}
 
 		if(i < 6 || i >= (codeLenght-6)){
@@ -123,5 +119,3 @@ function getTextWidth(text, font = '16px Cascadia Code') {
   const width = context.measureText(plainText).width;
   return width + 150;
 }
-
-// export const addContentToCodeBlockFunk = addContentToCodeBlock
