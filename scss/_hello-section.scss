@@ -1,13 +1,11 @@
 @import "variables";
 
-.hello_section{
+#hello_section{
 	padding: 5rem 9rem;
 
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-
-
+	align-items: center
 }
 
 .code{

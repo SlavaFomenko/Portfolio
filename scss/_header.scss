@@ -70,11 +70,18 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 5.0rem;
     background-color: $gray;
     border-top: 5px solid $dark-gray;
     transition: all 0.2s ease-in-out;
-    a{
+    
+    button{
+      font-family: "Cascadia Code", sans-serif;
+      padding: 0 5.0rem;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+
+      border: none;
       color: $white;
       text-decoration: none;
       font-weight: 600;
@@ -84,15 +91,15 @@ header{
       flex: 1 0 auto;
     }
 
-    &:hover{
-      a{  
+    button:hover{
+ 
         color: $yellow;
-      }
+      
     }
   }
   .active-tab{
     border-top: 5px solid $coral;
-    a{  
+    button{  
       color: $yellow;
     }
   }

@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="./styles/style.css">
 		<script defer src='./scripts/selectLanguage.js'></script>
 		<script defer src='./scripts/tabAnimation.js'></script>
-		<script defer src='./scripts/typeWriterText.js'></script>
-		<script defer src="./scripts/codeText.js"></script>
+		<script defer src='./scripts/typewriterText.js'></script>
+		<script defer src='./scripts/codeText.js'></script>
+		<script defer src='scripts/scrollAnimation.js'></script>
 </head>
 <body>
     <div class="wrapper">
@@ -29,31 +30,31 @@
             </div>
             <div class="tabs">
 							<div class="tab active-tab">
-								<a href="" lang='en'>_hello</a>
-								<a href="" lang='ru'>_привет</a>
+								<button  data-target="hello_section" lang='en'>_hello</button>
+								<button data-target="hello_section" lang='ru'>_привет</button>
 							</div>
 							<div class="tab">
-								<a href="" lang='en'>_about me</a>
-								<a href="" lang='ru'>_обо мне</a>
+								<button data-target="about_section" lang='en'>_about me</button>
+								<button data-target="about_section" lang='ru'>_обо мне</button>
 							</div>
 							<div class="tab">
-								<a href="" lang='en'>_skills</a>
-								<a href="" lang='ru'>_навыки</a>
+								<button data-target="skill_section" lang='en'>_skills</button>
+								<button data-target="skill_section" lang='ru'>_навыки</button>
 							</div>
 							<div class="tab">
-								<a href="" lang='en'>_projects</a>
-								<a href="" lang='ru'>_проекты</a>
+								<button data-target="projects_section"  lang='en'>_projects</button>
+								<button data-target="projects_section"  lang='ru'>_проекты</button>
 							</div>
 							<div class="tab">
-								<a href="" lang='en'>_contacts</a>
-								<a href="" lang='ru'>_контакты</a>
+								<button data-target="contacts_section"  lang='en'>_contacts</button>
+								<button data-target="contacts_section"  lang='ru'>_контакты</button>
 							</div>
 							<div class="tab">
 							</div>
 						</div>
         </header>
         <main>
-            <section class='hello_section'>
+            <section id='hello_section'>
 							<div class="code">
 							</div>
 							<div class="big_text">
@@ -64,10 +65,10 @@
 								<h2 id='typeWriterText'>FRONT_END</h2>
 							</div>
 						</section>
-						<section>2</section>
-						<section>3</section>
-						<section>4</section>
-						<section>5</section>
+						<section id='about_section'>2</section>
+						<section id='skill_section'>3</section>
+						<section id='projects_section'>4</section>
+						<section id='contacts_section'>5</section>
         </main>
         <footer>
             footer

@@ -18,7 +18,6 @@
 html, body {
   height: 100%;
   width: 100vw;
-  overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: $dark-gray;
   scrollbar-width: none;
@@ -38,4 +37,3 @@ html, body {
   min-height: 100vh;
   font-family: "Cascadia Code", sans-serif;
 }
-

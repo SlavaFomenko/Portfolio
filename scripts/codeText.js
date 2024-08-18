@@ -100,13 +100,8 @@ function addContentToCodeBlock(size) {
 				textSpan.innerHTML = str
 				textSpan.classList.add('inner_code')
 			}
-
 			codeBlock.appendChild(textSpan)
-
 		}
-		console.log(lineNumber.innerText );
-
-		
 	}
 
 addContentToCodeBlock(15)
