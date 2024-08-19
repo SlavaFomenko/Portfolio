@@ -63,7 +63,7 @@ header{
   width: 100%;
   height:49.5%;
   display: flex;
-  gap: 7px;
+  gap:.4375rem;
   
   .tab{
     height: 100%;
@@ -71,7 +71,7 @@ header{
     align-items: center;
     justify-content: center;
     background-color: $gray;
-    border-top: 5px solid $dark-gray;
+    border-top: .3125rem solid $dark-gray;
     transition: all 0.2s ease-in-out;
     
     button{
@@ -98,7 +98,7 @@ header{
     }
   }
   .active-tab{
-    border-top: 5px solid $coral;
+    border-top: .3125rem solid $coral;
     button{  
       color: $yellow;
     }

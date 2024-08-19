@@ -63,7 +63,7 @@
 	align-items: start;
 	flex-direction: column;
 
-	gap: 13px;
+	gap: .8125rem;
 
 	h1{
 		font-size: 11vw;
@@ -79,7 +79,7 @@
 		color:$purple;
 
 		span {
-			margin-left: 7px;
+			margin-left: .4375rem;
 			border-right: .1em solid;
 			animation: caret 1s steps(1) infinite;
 		}

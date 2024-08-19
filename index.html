@@ -1,78 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Fomenko Viacheslav</title>
-    <link rel="stylesheet" href="./styles/style.css">
-		<script defer src='./scripts/selectLanguage.js'></script>
-		<script defer src='./scripts/tabAnimation.js'></script>
-		<script defer src='./scripts/typewriterText.js'></script>
-		<script defer src='./scripts/codeText.js'></script>
-		<script defer src='scripts/scrollAnimation.js'></script>
-</head>
-<body>
-    <div class="wrapper">
-        <header>
-            <div class="title">
-                <div class="circles">
-                    <div class="red"></div>
-                    <div class="yellow"></div>
-                    <div class="green"></div>
-                </div>
-                <div class='header-title'>
-                    <h1 lang='en'>Fomenko_Viacheslav</h1>
-                    <h1 lang='ru'>Фоменко_Вячеслав</h1>
-                </div>
-                <select onchange="select_language(this.value)">
-                    <option value="en" selected>English</option>
-                    <option value="ru">Русский</option>
-                </select>
-            </div>
-            <div class="tabs">
-							<div class="tab active-tab">
-								<button  data-target="hello_section" lang='en'>_hello</button>
-								<button data-target="hello_section" lang='ru'>_привет</button>
-							</div>
-							<div class="tab">
-								<button data-target="about_section" lang='en'>_about me</button>
-								<button data-target="about_section" lang='ru'>_обо мне</button>
-							</div>
-							<div class="tab">
-								<button data-target="skill_section" lang='en'>_skills</button>
-								<button data-target="skill_section" lang='ru'>_навыки</button>
-							</div>
-							<div class="tab">
-								<button data-target="projects_section"  lang='en'>_projects</button>
-								<button data-target="projects_section"  lang='ru'>_проекты</button>
-							</div>
-							<div class="tab">
-								<button data-target="contacts_section"  lang='en'>_contacts</button>
-								<button data-target="contacts_section"  lang='ru'>_контакты</button>
-							</div>
-							<div class="tab">
-							</div>
-						</div>
-        </header>
-        <main>
-            <section id='hello_section'>
-							<div class="code">
-							</div>
-							<div class="big_text">
-								<h1 lang='en'>&ltSLAVA&gt<br>FOMENKO</h1>
-								<h2 lang='en'>//I WRITE</h2>
-								<h1 lang='ru'>&ltСЛАВА&gt<br>ФОМЕНКО</h1>
-								<h2 lang='ru'>//Я ПИШУ</h2>
-								<h2 id='typeWriterText'>FRONT_END</h2>
-							</div>
-						</section>
-						<section id='about_section'>2</section>
-						<section id='skill_section'>3</section>
-						<section id='projects_section'>4</section>
-						<section id='contacts_section'>5</section>
-        </main>
-        <footer>
-            footer
-        </footer>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Fomenko Viacheslav</title>
+		<link rel="stylesheet" href="./styles/style.css" />
+		<script defer src="./scripts/selectLanguage.js"></script>
+		<script defer src="./scripts/tabAnimation.js"></script>
+		<script defer src="./scripts/typewriterText.js"></script>
+		<script defer src="./scripts/codeText.js"></script>
+		<script defer src="scripts/scrollAnimation.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div class="title">
+					<div class="circles">
+						<div class="red"></div>
+						<div class="yellow"></div>
+						<div class="green"></div>
+					</div>
+					<div class="header-title">
+						<h1 lang="en">Fomenko_Viacheslav</h1>
+						<h1 lang="ru">Фоменко_Вячеслав</h1>
+					</div>
+					<select onchange="select_language(this.value)">
+						<option value="en" selected>English</option>
+						<option value="ru">Русский</option>
+					</select>
+				</div>
+				<div class="tabs">
+					<div class="tab active-tab">
+						<button data-target="hello_section" lang="en">_hello</button>
+						<button data-target="hello_section" lang="ru">_привет</button>
+					</div>
+					<div class="tab">
+						<button data-target="about_section" lang="en">_about me</button>
+						<button data-target="about_section" lang="ru">_обо мне</button>
+					</div>
+					<div class="tab">
+						<button data-target="skill_section" lang="en">_skills</button>
+						<button data-target="skill_section" lang="ru">_навыки</button>
+					</div>
+					<div class="tab">
+						<button data-target="projects_section" lang="en">_projects</button>
+						<button data-target="projects_section" lang="ru">_проекты</button>
+					</div>
+					<div class="tab">
+						<button data-target="contacts_section" lang="en">_contacts</button>
+						<button data-target="contacts_section" lang="ru">_контакты</button>
+					</div>
+					<div class="tab"></div>
+				</div>
+			</header>
+			<main>
+				<section id="hello_section">
+					<div class="code"></div>
+					<div class="big_text">
+						<h1 lang="en">&ltSLAVA&gt<br />FOMENKO</h1>
+						<h2 lang="en">//I WRITE</h2>
+						<h1 lang="ru">&ltСЛАВА&gt<br />ФОМЕНКО</h1>
+						<h2 lang="ru">//Я ПИШУ</h2>
+						<h2 id="typeWriterText">FRONT_END</h2>
+					</div>
+				</section>
+				<section id="about_section">2</section>
+				<section id="skill_section">3</section>
+				<section id="projects_section">4</section>
+				<section id="contacts_section">5</section>
+			</main>
+			<footer>footer</footer>
+		</div>
+	</body>
 </html>
